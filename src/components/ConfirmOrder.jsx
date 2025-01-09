@@ -1,8 +1,13 @@
 import React from "react";
 import "../styles/ConfirmOrder.css"
-const ConfirmOrder = ({ isOpen, cartData, onClose }) => {
+const ConfirmOrder = ({ isOpen, items, setCartItems, setIsNotificationOpen}) => {
     if (!isOpen) {
         return null;
+    }
+
+    const handleClose = () => {
+      setIsNotificationOpen(false)
+      setCartItems([]);
     }
 
     return (
@@ -19,7 +24,7 @@ const ConfirmOrder = ({ isOpen, cartData, onClose }) => {
                 </div>
                 <div className="notification-body">
                     <ul>
-                        {cartData.map((item, index) => (
+                        {items.map((item, index) => (
                             <li key={index}>
                                 <img src={item.image.desktop} alt={item.name} />
                                 <div className="order-items">
@@ -38,7 +43,7 @@ const ConfirmOrder = ({ isOpen, cartData, onClose }) => {
                         
                     </ul>
                     </div>
-                    <button onClick={onClose}>Start New Order</button>
+                    <button onClick={handleClose}>Start New Order</button>
                 
             </div>
         </div>

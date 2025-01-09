@@ -38,7 +38,7 @@ function App() {
       cartItems={cartItems}/>
     </div>
     <div className="cart">
-    <Cart items={cartItems} onRemoveFromCart={handleRemoveFromCart} />
+    <Cart items={cartItems} onRemoveFromCart={handleRemoveFromCart} setCartItems={setCartItems}/>
     </div>
     </>
   )
