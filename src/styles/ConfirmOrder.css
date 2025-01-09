@@ -21,13 +21,21 @@
 
 
 .notification-header h2 {
-  margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.notification-header p {
+  color: hsl(7, 20%, 60%);
+  margin: 10px;
 }
 
 .notification-body {
-  padding: 20px;
+  padding: 30px;
   background-color: hsl(13, 31%, 94%);
+  width: 500px;
+  margin: 10px;
+  
 }
 
 .notification-body ul {
@@ -36,7 +44,10 @@
 }
 
 .notification-body li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid hsl(7, 20%, 60%);
 }
 
 .notification-body img {
@@ -45,6 +56,7 @@
   object-fit: cover;
   border-radius: 4px;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .notification-body p {
@@ -55,18 +67,66 @@
   margin-bottom: 0;
 }
 
-button {
+.button-order {
   background-color: hsl(14, 86%, 42%);
   color: #fff;
   border: none;
-  border-radius: 4px;
-  padding: 5px 10px;
+  border-radius: 20px;
+  padding: 10px 10px;
   cursor: pointer;
+  width: 500px;
+  font-size: 17px;
+  margin-top: 20px;
 }
 
 .notification-body button:hover {
   background-color: #e25a3d;
 }
 
+.items-details {
+  font-weight: bold;  
+}
 
+.quantity-1 {
+  font-weight: 500;
+  color:  hsl(14, 86%, 42%);
+}
 
+.price-1{
+  color: hsl(7, 20%, 60%);
+}
+
+.total-1 {
+  font-weight: 500;
+  position: relative;
+  left: 250px;
+}
+
+.orders-total {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.fixed-total {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .notification-body {
+    padding: 30px;
+    background-color: hsl(13, 31%, 94%);
+    width: 280px;
+    margin: 10px;
+  }
+
+  .button-order {
+    width: 285px;
+  }
+  .total-1 {
+    font-weight: 500;
+    position: relative;
+    left: 50px;
+  }
+}
