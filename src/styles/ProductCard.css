@@ -1,0 +1,66 @@
+.productCard p {
+  color:  hsl(14, 25%, 72%);
+}
+.productCard img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.productCard h5 {
+  color: hsl(14, 86%, 42%);
+}
+
+.productCard button { 
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(2, 2, 2);
+  font-size: 1rem;
+  font-weight: 500;
+  border: solid 1px hsl(0, 0%, 4%);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -2rem;
+  left: 4.4rem;
+  border: 1px solid hsl(14, 86%, 42%);
+}
+
+.productCard button svg {
+  margin-right: 0.5rem; 
+}
+
+.productCard button:hover {
+  color: hsl(14, 86%, 42%);
+  border: solid 1px hsl(14, 86%, 42%);
+}
+
+.buttons {
+  color: rgb(2, 2, 2);
+  font-size: 1rem;
+  border: solid 1px hsl(0, 0%, 4%);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -2rem;
+  left: 4.4rem;
+  background-color: hsl(14, 86%, 42%);
+  border: none;
+  
+}
+
+.minus, .plus { 
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(0, 0%, 100%);  
+}
+
+.qty {
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(0, 0%, 100%);
+}
+
+
